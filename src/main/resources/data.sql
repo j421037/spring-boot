@@ -1,0 +1,1 @@
+INSERT INTO user (id, `username`, `name`, `password`) SELECT 1, "admin", "admin", "$2a$10$IKq1D/Fec./KhbaR4ntmBOyabAJfd4HfRp3.cY.3s5SU60ptUIGk2" FROM DUAL WHERE NOT EXISTS (SELECT * FROM user WHERE username = "admin");
